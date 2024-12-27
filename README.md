@@ -1,8 +1,11 @@
 # define-threads
 
-Zero dependencies, helps you use "worker" more easily in NodeJS, just like an asynchronous function
+`Zero dependencies`, helps you use `worker` more easily in `NodeJS`, just like an `async function`.
 
-# Usage
+Our implementation principle is very simple and clever, so you don't need to worry about introducing too many third-party libraries that would make your project bloated.
+If you want to understand how this library works, you can read the src/index.ts file.
+
+## Usage
 
 ```ts
 // my-worker-func.ts
@@ -48,6 +51,10 @@ async function main() {
 main();
 ```
 
-# License
+## Report bug
+
+The code has been tested locally and no issues were found. If you encounter any bugs while using it, please create an issue.
+
+## License
 
 MIT License
