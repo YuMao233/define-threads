@@ -1,6 +1,6 @@
 {
   "name": "define-threads",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helps you use workers more easily in NodeJS, just like an async function",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
