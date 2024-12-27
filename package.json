@@ -1,0 +1,29 @@
+{
+  "name": "define-threads",
+  "version": "1.0.1",
+  "description": "Helps you use workers more easily in NodeJS, just like an async function",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "author": "YuMao233",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "thread",
+    "worker",
+    "worker_threads"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuMao233/define-threads.git"
+  },
+  "homepage": "https://github.com/YuMao233/define-threads#readme",
+  "bugs": {
+    "url": "https://github.com/YuMao233/define-threads/issues"
+  }
+}
