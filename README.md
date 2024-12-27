@@ -38,7 +38,7 @@ export const testFunction = defineThread(
 import { calculateLargeSum, testFunction } from "./my-worker-func";
 
 async function main() {
-  // call Thread Function 1
+  // Use them like a simple async function
   // TS type hint is complete!
   const sum = await calculateLargeSum(100);
   console.log(sum); // Output: 4950
