@@ -5,6 +5,12 @@
 Our implementation principle is very simple and clever, so you don't need to worry about introducing too many third-party libraries that would make your project bloated.
 If you want to understand how this library works, you can read the src/index.ts file.
 
+## Installation
+
+```bash
+npm install define-threads
+```
+
 ## Usage
 
 ```ts
