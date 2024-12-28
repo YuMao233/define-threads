@@ -9,7 +9,8 @@
     "rootDir": "src",
     "moduleResolution": "node",
     "types": ["node"],
-    "declaration": true
+    "declaration": true,
+    "sourceMap": true
   },
   "include": ["./src/**/*.ts"],
   "exclude": ["node_modules", "dist"]

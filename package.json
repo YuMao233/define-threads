@@ -1,11 +1,12 @@
 {
   "name": "define-threads",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Helps you use workers more easily in NodeJS, just like an async function",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json",
+    "publish": "npm run build && npm publish"
   },
   "author": "YuMao233",
   "license": "MIT",
