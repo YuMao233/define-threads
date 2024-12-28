@@ -13,6 +13,8 @@ npm install define-threads
 
 ## Usage
 
+### TypeScript
+
 ```ts
 // my-worker.ts
 
@@ -52,6 +54,36 @@ async function main() {
   // call Thread Function 2
   const responses = await testFunction(1, 2, 3);
   console.log(responses); // Output: 6
+}
+
+main();
+```
+
+### JavaScript
+
+```js
+// my-worker.mjs
+
+import { createThreadContext } from "define-threads";
+const defineThread = createThreadContext(new URL(import.meta.url));
+
+export const calculateLargeSum = defineThread(async (maxNumber) => {
+  let sum = 0;
+  for (let i = 0; i < maxNumber; i++) {
+    sum += i;
+  }
+  return sum;
+});
+```
+
+```js
+// index.mjs
+
+import { calculateLargeSum } from "./my-worker.mjs";
+
+async function main() {
+  const sum = await calculateLargeSum(100);
+  console.log(sum); // Output: 4950
 }
 
 main();
