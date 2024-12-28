@@ -14,12 +14,12 @@ npm install define-threads
 ## Usage
 
 ```ts
-// my-worker-func.ts
+// my-worker.ts
 
-import { threadContext } from "define-threads";
+import { createThreadContext } from "define-threads";
 
 // Create a thread context using the current file path
-const defineThread = threadContext(__filename);
+const defineThread = createThreadContext(__filename);
 
 // Thread Function 1
 export const calculateLargeSum = defineThread(async (maxNumber: number) => {
@@ -41,7 +41,7 @@ export const testFunction = defineThread(
 ```ts
 // index.ts
 
-import { calculateLargeSum, testFunction } from "./my-worker-func";
+import { calculateLargeSum, testFunction } from "./my-worker";
 
 async function main() {
   // Use them like a simple async function
